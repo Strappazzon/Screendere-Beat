@@ -1,0 +1,100 @@
+<h1 align="center">
+  <br>
+  <img src="./Preview.png" alt="Screendere Beat"></a>
+  <br>
+  Screendere Beat
+  <br>
+</h1>
+
+<h4 align="center">Capture screenshots of Hinedere Beat's uncensored version.</h4>
+
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#settings">Settings</a> •
+  <a href="#download">Download</a> •
+  <a href="#license">License</a>
+</p>
+
+## About
+
+**Screendere Beat** is a small software to take screenshots of Hinedere Beat.
+
+I created it because the developer disabled the ability to take screenshots in the Steam version when launching the game in its [uncensored state](https://www.blazeepic.com/uploads/2/2/4/4/22443112/hinederebeat_uncensor.txt).
+
+## Getting Started
+
+* Launch **Screendere Beat.exe**.
+  * Every time you launch it, the program will check the System Registry to see if Steam is installed.
+  * When you close it, a file containing its settings will be created (or updated if it already exists) inside `%LOCALAPPDATA%\Screendere`
+
+* Type your Steam ID inside the **Your Steam ID** field.
+
+> ### 🎮 How to get your Steam ID
+>
+> * Navigate to <https://steamcommunity.com/id/my/tradeoffers/privacy>
+> * Scroll down the page until you find your **Trade URL**, under **Third-Party Sites**
+>   * The trade URL looks like this: `https://steamcommunity.com/tradeoffer/new/?partner=1234567890&token=T0k3N`
+> * The number between `?partner=` and `&token=` is your ID.
+>   * In this example your ID would be `1234567890`
+
+* Tick the **Play a Sound** box if you want to hear a sound whenever a screenshot is taken.
+
+* [Run](steam://run/759220) Hinedere Beat.
+
+* Press the **F12** key to capture a screenshot.
+
+> ### 🔵 NOTICE
+>
+> **F12** is Steam's default screenshot key. If you have changed it, when you press F12 to take a screenshot with Screendere Beat, **the game will skip to the next scene!**
+>
+> It is not possible to customize Screendere Beat's the screenshot key (at least for now).
+
+### Uploading the Screenshots to Steam Cloud
+
+Steam normally doesn't allow you to upload custom screenshots.
+
+You can work around it by either:
+
+* Manually [modifying screenshots.vdf](https://gaming.stackexchange.com/a/282581)
+* Using [SteaScree](https://steascree.download/)
+
+## Settings
+
+* **Your Steam ID**
+  * _Empty by default_
+  * Needed the create the screenshot save path
+
+* **Play a Sound**
+  * _Disabled by default_
+  * Play a sound when a screenshot is taken
+
+All settings are stored inside `%LOCALAPPDATA%\Screendere`.
+
+## Download
+
+You can [download](https://github.com/Strappazzon/Screendere-Beat/releases/latest) the latest version of Screendere Beat from the Releases page.
+
+## License
+
+```
+Copyright (c) 2019 Alberto Strappazzon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

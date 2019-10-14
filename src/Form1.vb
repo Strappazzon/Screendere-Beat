@@ -68,8 +68,7 @@ Public Class Form1
             sEncoderParams = New EncoderParameters(1)
             sEncoderParam = New EncoderParameter(sEncoder, 100L)
             sEncoderParams.Param(0) = sEncoderParam
-            's.Save(sPath & Date.Now.ToString("yyyyMMddHHmmss_fff") & ".jpg", sCodecInfo, sEncoderParams)
-            s.Save("C:\Users\Root\Desktop\" & Date.Now.ToString("yyyyMMddHHmmss_fff") & ".jpg", sCodecInfo, sEncoderParams)
+            s.Save(sPath & Date.Now.ToString("yyyyMMddHHmmss_fff") & ".jpg", sCodecInfo, sEncoderParams)
         End Using
 
         If SoundChkBox.Checked = True Then

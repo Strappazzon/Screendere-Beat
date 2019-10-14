@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Screendere Beat</title>
+	<meta name="description" content="Capture screenshots of Hinedere Beat's uncensored version.">
+	<meta name="author" content="Alberto Strappazzon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="referrer" content="no-referrer">
+	<meta property="og:title" content="Screendere Beat">
+	<meta property="og:description" content="Capture screenshots of Hinedere Beat's uncensored version.">
+	<meta property="og:site_name" content="Screendere Beat">
+	<meta property="og:url" content="https://strappazzon.github.io/Screendere-Beat/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://strappazzon.github.io/Screendere-Beat/assets/ogimage.png">
+	<link type="image/png" rel="icon" href="assets/favicon.png">
+	<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<div class="container">
+	<div align="center">
+		<a href="assets/screenshot.png"><img class="img-responsive" src="assets/screenshot.png" alt="Screendere Beat"></a>
+		<h1 id="title">Screendere Beat</h1>
+
+		<h4>Capture screenshots of Hinedere Beat's uncensored version.</h4>
+
+		<p>
+		<a href="#about">About</a> •
+		<a href="#getting-started">Getting Started</a> •
+		<a href="#settings">Settings</a> •
+		<a href="#download">Download</a> •
+		<a href="#source-code">Source Code</a> •
+		<a href="#license">License</a>
+		</p>
+	</div>
+
+	<h2 id="about"># About</h2>
+
+	<p><strong>Screendere Beat</strong> is a small software to take screenshots of Hinedere Beat.</p>
+
+	<p>I created it because the developer disabled the ability to take screenshots in the Steam version when launching the game in its <a href="https://www.blazeepic.com/uploads/2/2/4/4/22443112/hinederebeat_uncensor.txt">uncensored state</a>.</p>
+
+	<h2 id="getting-started"># Getting Started</h2>
+
+	<ul>
+		<li>Launch <strong>Screendere Beat.exe</strong>.</li>
+		<ul>
+			<li>Every time you launch it, the program will check the System Registry to see if Steam is installed.</li>
+			<li>When you close it, a file containing the program's settings will be created (or updated if it already exists) inside <code>%LOCALAPPDATA%\Screendere</code></li>
+		</ul>
+
+		<li>Type your Steam ID inside the <strong>Your Steam ID</strong> field.</li>
+	</ul>
+
+	<blockquote>
+		<p class="quote-title">> How to get your Steam ID</p>
+		<p class="quote-text">
+			<ul>
+				<li>Navigate to <a href="https://steamcommunity.com/id/my/tradeoffers/privacy">https://steamcommunity.com/id/my/tradeoffers/privacy</a></li>
+				<li>Scroll down the page until you find your <strong>Trade URL</strong>, under <strong>Third-Party Sites</strong>.</li>
+				<ul>
+					<li>The trade URL looks like this: <code>https://steamcommunity.com/tradeoffer/new/?partner=1234567890&token=T0k3N</code></li>	
+				</ul>
+				<li>The number between <code>?partner=</code> and <code>&token=</code> is your ID.</li>
+				<ul>
+					<li>In this example your ID would be <code>1234567890</code></li>
+				</ul>
+			</ul>
+		</p>
+	</blockquote>
+
+	<ul>
+		<li>Tick the <strong>Play a Sound</strong> box if you want to hear a sound whenever a screenshot is taken.</li>
+		<li><a href="steam://run/759220">Run</a> Hinedere Beat.</li>
+		<li>Press the <kbd>F12</kbd> key to capture a screenshot.</li>
+	</ul>
+
+	<blockquote>
+		<p class="quote-title">i NOTICE</p>
+		<p class="quote-text">
+			<ul>
+				<li><kbd>F12</kbd> is Steam's default screenshot key. If you have changed it, when you press F12 to take a screenshot with Screendere Beat, <strong><u>the game will skip to the next scene!</u></strong></li>
+				<li>It is not possible to customize Screendere Beat's the screenshot key (at least for now).</li>
+			</ul>
+		</p>
+	</blockquote>
+
+	<h3 id="steam-cloud"># Uploading the Screenshots to Steam Cloud</h3>
+
+	<p>Steam normally doesn't allow you to upload custom screenshots.</p>
+
+	<p>You can work around it by either:</p>
+	<ul>
+		<li>Manually <a href="https://gaming.stackexchange.com/a/282581">modifying screenshots.vdf</a></li>
+		<li>Using <a href="https://steascree.download/">SteaScree</a></li>
+	</ul>
+
+	<h2 id="settings"># Settings</h2>
+
+	<ul>
+		<li><strong>Your Steam ID</strong></li>
+		<ul>
+			<li><em>Empty by default</em></li>
+			<li>Needed to create the screenshot save path</li>
+		</ul>
+
+		<li><strong>Play a Sound</strong></li>
+		<ul>
+			<li><em>Disabled by default</em></li>
+			<li>Play a sound when a screenshot is taken</li>
+		</ul>
+	</ul>
+
+	<p>All settings will be stored inside <code>%LOCALAPPDATA%\Screendere</code></p>
+
+	<h2 id="download"># Download</h2>
+
+	<p>You can <a href="https://github.com/Strappazzon/Screendere-Beat/releases/latest">download</a> the latest version of Screendere Beat from the Releases page.</p>
+
+	<h2 id="source-code"># Source Code</h2>
+
+	<p>The complete Screendere Beat source code is available <a href="https://github.com/Strappazzon/Screendere-Beat">on GitHub</a>.</p>
+
+	<h2 id="license"># License</h2>
+
+	<p>By downloading and/or using Screendere Beat, you are accepting the license terms.</p>
+
+	<div class="codeblock">
+	<p>Copyright (c) 2019 Alberto Strappazzon</p>
+
+	<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:</p>
+
+	<p>The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.</p>
+
+	<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.</p>
+	</div>
+</div>
+</body>
+</html>

@@ -33,7 +33,7 @@ I created it because the developer disabled the ability to take screenshots in t
 > ### 🎮 How to get your Steam ID
 >
 > * Navigate to <https://steamcommunity.com/id/my/tradeoffers/privacy>
-> * Scroll down the page until you find your **Trade URL**, under **Third-Party Sites**
+> * Scroll down the page until you find your **Trade URL**, under **Third-Party Sites**.
 >   * The trade URL looks like this: `https://steamcommunity.com/tradeoffer/new/?partner=1234567890&token=T0k3N`
 > * The number between `?partner=` and `&token=` is your ID.
 >   * In this example your ID would be `1234567890`
@@ -46,9 +46,9 @@ I created it because the developer disabled the ability to take screenshots in t
 
 > ### 🔵 NOTICE
 >
-> **F12** is Steam's default screenshot key. If you have changed it, when you press F12 to take a screenshot with Screendere Beat, **the game will skip to the next scene!**
+> * **F12** is Steam's default screenshot key. If you have changed it, when you press F12 to take a screenshot with Screendere Beat, **the game will skip to the next scene!**
 >
-> It is not possible to customize Screendere Beat's the screenshot key (at least for now).
+> * It is not possible to customize Screendere Beat's the screenshot key (at least for now).
 
 ### Uploading the Screenshots to Steam Cloud
 
@@ -63,13 +63,13 @@ You can work around it by either:
 
 * **Your Steam ID**
   * _Empty by default_
-  * Needed the create the screenshot save path
+  * Needed to create the screenshot save path
 
 * **Play a Sound**
   * _Disabled by default_
   * Play a sound when a screenshot is taken
 
-All settings are stored inside `%LOCALAPPDATA%\Screendere`.
+All settings are stored inside `%LOCALAPPDATA%\Screendere`
 
 ## Download
 

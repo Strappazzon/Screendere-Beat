@@ -46,9 +46,8 @@ I created it because the developer disabled the ability to take screenshots in t
 
 > ### 🔵 NOTICE
 >
-> * **F12** is Steam's default screenshot key. If you have changed it, when you press F12 to take a screenshot with Screendere Beat, **the game will skip to the next scene!**
->
-> * It is not possible to customize Screendere Beat's the screenshot key (at least for now).
+> * When you press F12 to take a screenshot, **the game will skip to the next scene.** This is because the game acceps any key to skip the dialogues.
+> * It is not possible to customize Screendere Beat's screenshot key (at least for now).
 
 ### Uploading the Screenshots to Steam Cloud
 

@@ -50,7 +50,11 @@
 ::-webkit-scrollbar-corner { background-color: #222; }
 
 ::selection { color: #000; background-color: #fff; }
-code::selection { color: #fff; background-color: #000; }
+code::selection,
+.quote-title::selection {
+	color: #fff;
+	background-color: #000;
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 

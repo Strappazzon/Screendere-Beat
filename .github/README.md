@@ -22,6 +22,8 @@
 
 I created it because the developer disabled the ability to take screenshots in the Steam version when launching the game in its [uncensored state](https://www.blazeepic.com/uploads/2/2/4/4/22443112/hinederebeat_uncensor.txt).
 
+I'm aware that I could just use ShareX but the PrntScn key would capture all of my desktops.
+
 ## Getting Started
 
 * Launch **Screendere Beat.exe**.
@@ -46,7 +48,7 @@ I created it because the developer disabled the ability to take screenshots in t
 
 > ### 🔵 NOTICE
 >
-> * When you press F12 to take a screenshot, **the game will skip to the next scene.** This is because the game acceps any key to skip the dialogues.
+> * When you press F12 to take a screenshot, **the game will skip to the next scene.** This is because the game acceps any key (even multimedia keys) to skip the dialogues.
 > * It is not possible to customize Screendere Beat's screenshot key (at least for now).
 
 ### Uploading the Screenshots to Steam Cloud

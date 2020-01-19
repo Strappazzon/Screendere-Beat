@@ -164,11 +164,10 @@
   </metadata>
   <data name="aboutVersion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACkAAAAKCAYAAAApWHduAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAJ9JREFUOE+VjUEOxDAIA/v/T3fXxASBIHHnUOGJrT4K7x+eMtg4VBKcGMzmj6z6
-        9x/xNNR9tytqRm8ual/ddztT6xvUDDp3ovbVfbcztb5BzaBzJ2pf3Xe7rfwKk5n8RO2r+263lV9hMpOf
-        qH113+228itMZvIAb4DRuGUABxiNLieVU+b2BhiNWwZwgNHoclI5ZU5vE9g4VBKcGCu/zw8py0jG/fhv
-        tAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACkAAAAKCAYAAAApWHduAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACLSURBVDhPnY1BEoAwCAP7/09rU4MDKEPTPXVDomOHa8KnxMkOG4NRD/vHP6NukfvSXio71F3u
+        v14eHH/ZDuou918vD46/bAd1l/vBTULoqPIOdZf7wU1C6KjyDnWX+8FNQuiocoAboAaqHKzRhLrovP0g
+        nx9wA9RAlYM1mlAXnbcf5FPiZIeN8SRj3PQI/wEhruXZAAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="Tooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

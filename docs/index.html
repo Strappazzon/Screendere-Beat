@@ -1,25 +1,35 @@
+---
+layout: none
+title: "Screendere Beat | Capture Hinedere Beat screenshots"
+description: "Capture screenshots of Hinedere Beat's uncensored version."
+---
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<title>Screendere Beat</title>
-	<meta name="description" content="Capture screenshots of Hinedere Beat's uncensored version.">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ page.description }}">
+	<meta name="keywords" content="screendere beat,hinedere beat,hinedere beat steam,hinedere beat uncensored,hinedere beat screenshot">
 	<meta name="author" content="Alberto Strappazzon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
 	<meta name="referrer" content="no-referrer">
-	<meta property="og:title" content="Screendere Beat">
-	<meta property="og:description" content="Capture screenshots of Hinedere Beat's uncensored version.">
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:description" content="{{ page.description }}">
 	<meta property="og:site_name" content="Screendere Beat">
-	<meta property="og:url" content="https://strappazzon.github.io/Screendere-Beat/">
+	<meta property="og:url" content="{{ site.baseurl | prepend: site.url }}">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://strappazzon.github.io/Screendere-Beat/assets/ogimage.png">
-	<link type="image/png" rel="icon" href="assets/favicon.png">
-	<link rel="stylesheet" href="style.css?v=1">
+	<meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/assets/img/ogimage.png">
+	<link rel="canonical" href="{{ site.baseurl | prepend: site.url }}{{ page.url | replace: 'index.html',''}}">
+	<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/styles.css?v=2' | relative_url }}">
 </head>
 <body>
 <div class="container">
 	<div align="center">
-		<a href="assets/screenshot.png"><img class="img-responsive" src="assets/screenshot.png" alt="Screendere Beat"></a>
+		<a href="{{ '/assets/img/screenshot.png' | relative_url }}"><img class="img-responsive" src="{{ '/assets/img/screenshot.png' | relative_url }}" alt="Screendere Beat Screenshot"></a>
 		<h1 id="title">Screendere Beat</h1>
 
 		<h4>Capture screenshots of Hinedere Beat's uncensored version.</h4>

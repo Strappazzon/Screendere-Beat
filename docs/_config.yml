@@ -1,0 +1,6 @@
+baseurl: "/Screendere-Beat"
+sass:
+  sass_dir: assets/css
+  style: compressed
+exclude:
+ - README.md

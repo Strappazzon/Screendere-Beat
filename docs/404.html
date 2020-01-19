@@ -1,22 +1,23 @@
+---
+layout: none
+title: "Not Found | Screendere Beat"
+---
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<title>Screendere Beat - Not Found</title>
-	<meta name="description" content="Capture screenshots of Hinedere Beat's uncensored version.">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<title>{{ page.title }}</title>
 	<meta name="author" content="Alberto Strappazzon">
+	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="referrer" content="no-referrer">
-	<meta property="og:title" content="Screendere Beat">
-	<meta property="og:description" content="Capture screenshots of Hinedere Beat's uncensored version.">
-	<meta property="og:site_name" content="Screendere Beat">
-	<meta property="og:url" content="https://strappazzon.github.io/Screendere-Beat/">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://strappazzon.github.io/Screendere-Beat/assets/ogimage.png">
-	<link type="image/png" rel="icon" href="assets/favicon.png">
-	<link rel="stylesheet" href="style_404.css?v=1">
+	<link rel="canonical" href="{{ site.baseurl | prepend: site.url }}{{ page.url | replace: 'index.html',''}}">
+	<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/style_404.css?v=1' | relative_url }}">
 </head>
 <body>
-	<a href="https://strappazzon.github.io/Screendere-Beat">> PAGE NOT FOUND</a>
+	<a href="{{ site.baseurl | prepend: site.url }}">> PAGE NOT FOUND</a>
 </body>
 </html>

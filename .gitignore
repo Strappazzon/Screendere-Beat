@@ -25,3 +25,6 @@
 *.ico
 
 .release
+
+#Jekyll
+_site

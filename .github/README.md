@@ -34,13 +34,13 @@ I'm aware that I could just use ShareX but the PrntScn key would capture all of 
 
 > ### 🎮 How to get your Steam ID
 >
-> * Navigate to <https://steamcommunity.com/id/my/tradeoffers/privacy>
+> * Go to <https://steamcommunity.com/id/my/tradeoffers/privacy>
 > * Scroll down the page until you find your **Trade URL**, under **Third-Party Sites**.
 >   * The trade URL looks like this: `https://steamcommunity.com/tradeoffer/new/?partner=1234567890&token=T0k3N`
 > * The number between `?partner=` and `&token=` is your ID.
 >   * In this example your ID would be `1234567890`
 
-* Tick the **Play a Sound** box if you want to hear a sound whenever a screenshot is taken.
+* Tick **Play a Sound** if you want to hear a sound whenever a screenshot is taken.
 
 * [Run](steam://run/759220) Hinedere Beat.
 

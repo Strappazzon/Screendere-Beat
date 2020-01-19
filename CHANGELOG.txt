@@ -1,2 +1,8 @@
+1.1.0
+ - Enhancement: The screenshots folder will be created if it doesn't exist
+ - Enhancement: Settings from the old version will migrate to the new version
+ - Refactoring
+ - Added more comments to the code
+
 1.0.0
  - First release

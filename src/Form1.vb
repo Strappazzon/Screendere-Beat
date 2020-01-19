@@ -8,6 +8,16 @@ Public Class Form1
     Private steamPath As String
     Private Shared ReadOnly Quality As Encoder
 
+    Private Sub UpgradeSettings()
+        'Migrate settings to the new version
+        'Unfortunately, settings migrate only if the new version is installed in the same directory as the old version
+        '//bytes.com/topic/visual-basic-net/answers/854235-my-settings-upgrade-doesnt-upgrade#post3426232
+        If My.Settings.MustUpgrade = True Then
+            My.Settings.Upgrade()
+            My.Settings.MustUpgrade = False
+        End If
+    End Sub
+
     Private Shared Function GetEncoderInfo(ByVal format As ImageFormat) As ImageCodecInfo
         Dim encoders() As ImageCodecInfo = ImageCodecInfo.GetImageEncoders()
 
@@ -61,6 +71,9 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Migrate settings from old version
+        UpgradeSettings()
+
         'Load settings
         UIDTextBox.Text = My.Settings.SteamUID
         SoundChkBox.Checked = My.Settings.PlaySound

@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Capture screenshots of Hinedere Beats's uncensored version")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("Screendere Beat")>
-<Assembly: AssemblyCopyright("Copyright © 2019 Alberto Strappazzon")>
+<Assembly: AssemblyCopyright("Copyright © 2019 - 2020 Alberto Strappazzon")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

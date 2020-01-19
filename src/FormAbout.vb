@@ -1,11 +1,6 @@
 ﻿Public Class FormAbout
-    Private Sub FormAbout_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
-        Form1.Enabled = True
-        Dispose()
-    End Sub
-
     Private Sub HomepageLabel_Click(sender As Object, e As EventArgs) Handles HomepageLabel.Click
-        Process.Start("https://strappazzon.github.io/Screendere-Beat/index.html")
+        Process.Start("https://strappazzon.xyz/Screendere-Beat/")
     End Sub
 
     Private Sub Support_Click(sender As Object, e As EventArgs) Handles Support.Click

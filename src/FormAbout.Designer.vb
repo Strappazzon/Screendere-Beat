@@ -47,7 +47,7 @@ Partial Class FormAbout
         '
         Me.logo.BackColor = System.Drawing.Color.Transparent
         Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
-        Me.logo.Location = New System.Drawing.Point(12, 12)
+        Me.logo.Location = New System.Drawing.Point(14, 12)
         Me.logo.Name = "logo"
         Me.logo.Size = New System.Drawing.Size(150, 30)
         Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize

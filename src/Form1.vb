@@ -38,6 +38,11 @@ Public Class Form1
             'Screenshot folder
             Dim sPath As String = steamPath & "\userdata\" & UIDTextBox.Text & "\760\remote\759220\screenshots\"
 
+            'Create the screenshots folder if it doesn't exist
+            If Not Directory.Exists(sPath) Then
+                Directory.CreateDirectory(sPath)
+            End If
+
             'Save the screenshot
             S.Save(sPath & Now.ToString("yyyyMMddHHmmss_fff") & ".jpg", GetEncoderInfo(ImageFormat.Jpeg), sEncoderParams)
 

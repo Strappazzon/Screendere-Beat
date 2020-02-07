@@ -66,7 +66,7 @@ Partial Class Form1
         Me.AboutVersion.BackColor = System.Drawing.Color.Transparent
         Me.AboutVersion.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AboutVersion.Image = CType(resources.GetObject("AboutVersion.Image"), System.Drawing.Image)
-        Me.AboutVersion.Location = New System.Drawing.Point(230, 22)
+        Me.AboutVersion.Location = New System.Drawing.Point(195, 22)
         Me.AboutVersion.Name = "AboutVersion"
         Me.AboutVersion.Size = New System.Drawing.Size(41, 10)
         Me.AboutVersion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -106,7 +106,7 @@ Partial Class Form1
         Me.SoundChkBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SoundChkBox.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SoundChkBox.ForeColor = System.Drawing.Color.White
-        Me.SoundChkBox.Location = New System.Drawing.Point(13, 120)
+        Me.SoundChkBox.Location = New System.Drawing.Point(13, 117)
         Me.SoundChkBox.Name = "SoundChkBox"
         Me.SoundChkBox.Size = New System.Drawing.Size(110, 17)
         Me.SoundChkBox.TabIndex = 4
@@ -130,7 +130,7 @@ Partial Class Form1
         Me.PlayImage.BackColor = System.Drawing.Color.Transparent
         Me.PlayImage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PlayImage.Image = CType(resources.GetObject("PlayImage.Image"), System.Drawing.Image)
-        Me.PlayImage.Location = New System.Drawing.Point(220, 50)
+        Me.PlayImage.Location = New System.Drawing.Point(190, 55)
         Me.PlayImage.Name = "PlayImage"
         Me.PlayImage.Size = New System.Drawing.Size(50, 53)
         Me.PlayImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -143,7 +143,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(284, 146)
+        Me.ClientSize = New System.Drawing.Size(264, 146)
         Me.Controls.Add(Me.PlayImage)
         Me.Controls.Add(Me.SoundChkBox)
         Me.Controls.Add(Me.UIDHelpLabel)

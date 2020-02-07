@@ -82,7 +82,6 @@ Public Class Form1
         Using SteamRegKey As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Valve\Steam")
             Try
                 SteamPath = SteamRegKey.GetValue("InstallPath")
-                SteamRegKey.Close()
 
                 KeyTimer.Interval = 100
                 KeyTimer.Start()

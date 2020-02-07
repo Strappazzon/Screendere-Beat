@@ -26,14 +26,13 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.UIDTextBox = New System.Windows.Forms.TextBox()
         Me.Logo = New System.Windows.Forms.PictureBox()
-        Me.AboutVersion = New System.Windows.Forms.PictureBox()
         Me.UIDLabel = New System.Windows.Forms.Label()
         Me.UIDHelpLabel = New System.Windows.Forms.Label()
         Me.SoundChkBox = New System.Windows.Forms.CheckBox()
         Me.Tooltip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PlayImage = New System.Windows.Forms.PictureBox()
+        Me.AboutLabel = New System.Windows.Forms.Label()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AboutVersion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PlayImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -60,19 +59,6 @@ Partial Class Form1
         Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Logo.TabIndex = 1
         Me.Logo.TabStop = False
-        '
-        'AboutVersion
-        '
-        Me.AboutVersion.BackColor = System.Drawing.Color.Transparent
-        Me.AboutVersion.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AboutVersion.Image = CType(resources.GetObject("AboutVersion.Image"), System.Drawing.Image)
-        Me.AboutVersion.Location = New System.Drawing.Point(195, 22)
-        Me.AboutVersion.Name = "AboutVersion"
-        Me.AboutVersion.Size = New System.Drawing.Size(41, 10)
-        Me.AboutVersion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.AboutVersion.TabIndex = 2
-        Me.AboutVersion.TabStop = False
-        Me.Tooltip.SetToolTip(Me.AboutVersion, "About Screendere Beat")
         '
         'UIDLabel
         '
@@ -138,17 +124,31 @@ Partial Class Form1
         Me.PlayImage.TabStop = False
         Me.Tooltip.SetToolTip(Me.PlayImage, "Play Hinedere Beat")
         '
+        'AboutLabel
+        '
+        Me.AboutLabel.AutoSize = True
+        Me.AboutLabel.BackColor = System.Drawing.Color.Transparent
+        Me.AboutLabel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AboutLabel.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AboutLabel.ForeColor = System.Drawing.Color.White
+        Me.AboutLabel.Location = New System.Drawing.Point(192, 22)
+        Me.AboutLabel.Name = "AboutLabel"
+        Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
+        Me.AboutLabel.TabIndex = 6
+        Me.AboutLabel.Text = "v1.2.0"
+        Me.Tooltip.SetToolTip(Me.AboutLabel, "About Screendere Beat")
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(264, 146)
+        Me.Controls.Add(Me.AboutLabel)
         Me.Controls.Add(Me.PlayImage)
         Me.Controls.Add(Me.SoundChkBox)
         Me.Controls.Add(Me.UIDHelpLabel)
         Me.Controls.Add(Me.UIDLabel)
-        Me.Controls.Add(Me.AboutVersion)
         Me.Controls.Add(Me.Logo)
         Me.Controls.Add(Me.UIDTextBox)
         Me.DoubleBuffered = True
@@ -161,7 +161,6 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Screendere Beat"
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AboutVersion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PlayImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -170,10 +169,10 @@ Partial Class Form1
 
     Friend WithEvents UIDTextBox As TextBox
     Friend WithEvents Logo As PictureBox
-    Friend WithEvents AboutVersion As PictureBox
     Friend WithEvents UIDLabel As Label
     Friend WithEvents UIDHelpLabel As Label
     Friend WithEvents SoundChkBox As CheckBox
     Friend WithEvents Tooltip As ToolTip
     Friend WithEvents PlayImage As PictureBox
+    Friend WithEvents AboutLabel As Label
 End Class

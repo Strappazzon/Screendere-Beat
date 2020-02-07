@@ -106,7 +106,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub AboutVersion_Click(sender As Object, e As EventArgs) Handles AboutVersion.Click
+    Private Sub AboutLabel_Click(sender As Object, e As EventArgs) Handles AboutLabel.Click
         FormAbout.ShowDialog()
     End Sub
 

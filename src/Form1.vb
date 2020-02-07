@@ -99,8 +99,8 @@ Public Class Form1
     End Sub
 
     Private Sub KeyTimer_Tick(sender As Object, ByVal e As EventArgs) Handles KeyTimer.Tick
-        'Capture a screenshot whenever F12 key is pressed, but only if the user typed in a Steam user ID
-        If GetAsyncKeyState(Keys.F12) And UIDTextBox.Text <> "" Then
+        'Capture a screenshot whenever F12 key is pressed if the user typed in a Steam user ID and the game has focus
+        If GetAsyncKeyState(Keys.F12) AndAlso (UIDTextBox.Text <> "" And (ProcessHelper.GetActiveProcess() IsNot Nothing AndAlso String.Equals(ProcessHelper.GetActiveProcess().ProcessName, "Hinedere Beat", StringComparison.OrdinalIgnoreCase))) Then
             CaptureScreenshot()
         End If
     End Sub

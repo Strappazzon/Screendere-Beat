@@ -95,7 +95,7 @@ Partial Class Form1
         Me.SoundChkBox.Location = New System.Drawing.Point(13, 117)
         Me.SoundChkBox.Name = "SoundChkBox"
         Me.SoundChkBox.Size = New System.Drawing.Size(110, 17)
-        Me.SoundChkBox.TabIndex = 4
+        Me.SoundChkBox.TabIndex = 3
         Me.SoundChkBox.Text = "Play a Sound"
         Me.Tooltip.SetToolTip(Me.SoundChkBox, "Play a sound when a screenshot is taken")
         Me.SoundChkBox.UseVisualStyleBackColor = False
@@ -134,7 +134,7 @@ Partial Class Form1
         Me.AboutLabel.Location = New System.Drawing.Point(192, 22)
         Me.AboutLabel.Name = "AboutLabel"
         Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
-        Me.AboutLabel.TabIndex = 6
+        Me.AboutLabel.TabIndex = 4
         Me.AboutLabel.Text = "v1.2.0"
         Me.Tooltip.SetToolTip(Me.AboutLabel, "About Screendere Beat")
         '

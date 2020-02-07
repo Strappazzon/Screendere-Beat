@@ -85,8 +85,8 @@ Public Class Form1
 
                 KeyTimer.Interval = 100
                 KeyTimer.Start()
-            Catch nullValue As NullReferenceException
-                MessageBox.Show("Screendere Beat requires Steam. If you are trying to use this software with a DRM-free version of the game, you don't need it.", "Steam is not installed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Catch ex As Exception
+                MessageBox.Show(("Screendere Beat was unable to detect the Steam installation folder: " & ex.Message()).Replace("..", "."), "Steam is not installed", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Application.Exit()
             End Try
         End Using

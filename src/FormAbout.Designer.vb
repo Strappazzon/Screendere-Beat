@@ -24,12 +24,12 @@ Partial Class FormAbout
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAbout))
         Me.AboutLabel = New System.Windows.Forms.Label()
-        Me.logo = New System.Windows.Forms.PictureBox()
+        Me.Logo = New System.Windows.Forms.PictureBox()
         Me.HomepageLabel = New System.Windows.Forms.Label()
-        Me.Support = New System.Windows.Forms.Label()
+        Me.SupportLabel = New System.Windows.Forms.Label()
         Me.ChangelogLabel = New System.Windows.Forms.Label()
         Me.LicenseLabel = New System.Windows.Forms.Label()
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AboutLabel
@@ -43,16 +43,16 @@ Partial Class FormAbout
         Me.AboutLabel.TabIndex = 0
         Me.AboutLabel.Text = resources.GetString("AboutLabel.Text")
         '
-        'logo
+        'Logo
         '
-        Me.logo.BackColor = System.Drawing.Color.Transparent
-        Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
-        Me.logo.Location = New System.Drawing.Point(14, 12)
-        Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(150, 30)
-        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.logo.TabIndex = 2
-        Me.logo.TabStop = False
+        Me.Logo.BackColor = System.Drawing.Color.Transparent
+        Me.Logo.Image = CType(resources.GetObject("Logo.Image"), System.Drawing.Image)
+        Me.Logo.Location = New System.Drawing.Point(14, 12)
+        Me.Logo.Name = "Logo"
+        Me.Logo.Size = New System.Drawing.Size(150, 30)
+        Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Logo.TabIndex = 2
+        Me.Logo.TabStop = False
         '
         'HomepageLabel
         '
@@ -67,18 +67,18 @@ Partial Class FormAbout
         Me.HomepageLabel.TabIndex = 3
         Me.HomepageLabel.Text = "> Official Website"
         '
-        'Support
+        'SupportLabel
         '
-        Me.Support.AutoSize = True
-        Me.Support.BackColor = System.Drawing.Color.Transparent
-        Me.Support.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Support.Font = New System.Drawing.Font("MS Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Support.ForeColor = System.Drawing.Color.White
-        Me.Support.Location = New System.Drawing.Point(14, 175)
-        Me.Support.Name = "Support"
-        Me.Support.Size = New System.Drawing.Size(59, 12)
-        Me.Support.TabIndex = 4
-        Me.Support.Text = "> Support"
+        Me.SupportLabel.AutoSize = True
+        Me.SupportLabel.BackColor = System.Drawing.Color.Transparent
+        Me.SupportLabel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SupportLabel.Font = New System.Drawing.Font("MS Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SupportLabel.ForeColor = System.Drawing.Color.White
+        Me.SupportLabel.Location = New System.Drawing.Point(14, 175)
+        Me.SupportLabel.Name = "SupportLabel"
+        Me.SupportLabel.Size = New System.Drawing.Size(59, 12)
+        Me.SupportLabel.TabIndex = 4
+        Me.SupportLabel.Text = "> Support"
         '
         'ChangelogLabel
         '
@@ -114,9 +114,9 @@ Partial Class FormAbout
         Me.ClientSize = New System.Drawing.Size(414, 201)
         Me.Controls.Add(Me.LicenseLabel)
         Me.Controls.Add(Me.ChangelogLabel)
-        Me.Controls.Add(Me.Support)
+        Me.Controls.Add(Me.SupportLabel)
         Me.Controls.Add(Me.HomepageLabel)
-        Me.Controls.Add(Me.logo)
+        Me.Controls.Add(Me.Logo)
         Me.Controls.Add(Me.AboutLabel)
         Me.Font = New System.Drawing.Font("MS Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -129,16 +129,16 @@ Partial Class FormAbout
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About"
         Me.TopMost = True
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents AboutLabel As Label
-    Friend WithEvents logo As PictureBox
+    Friend WithEvents Logo As PictureBox
     Friend WithEvents HomepageLabel As Label
-    Friend WithEvents Support As Label
+    Friend WithEvents SupportLabel As Label
     Friend WithEvents ChangelogLabel As Label
     Friend WithEvents LicenseLabel As Label
 End Class

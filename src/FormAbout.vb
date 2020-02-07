@@ -3,11 +3,11 @@
         Process.Start("https://strappazzon.xyz/Screendere-Beat/")
     End Sub
 
-    Private Sub Support_Click(sender As Object, e As EventArgs) Handles Support.Click
+    Private Sub SupportLabel_Click(sender As Object, e As EventArgs) Handles SupportLabel.Click
         Process.Start("https://github.com/Strappazzon/Screendere-Beat/issues")
     End Sub
 
-    Private Sub Changelog_Click(sender As Object, e As EventArgs) Handles ChangelogLabel.Click
+    Private Sub ChangelogLabel_Click(sender As Object, e As EventArgs) Handles ChangelogLabel.Click
         Process.Start("https://github.com/Strappazzon/Screendere-Beat/blob/master/CHANGELOG.txt")
     End Sub
 

@@ -25,15 +25,15 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.UIDTextBox = New System.Windows.Forms.TextBox()
-        Me.logo = New System.Windows.Forms.PictureBox()
-        Me.aboutVersion = New System.Windows.Forms.PictureBox()
+        Me.Logo = New System.Windows.Forms.PictureBox()
+        Me.AboutVersion = New System.Windows.Forms.PictureBox()
         Me.UIDLabel = New System.Windows.Forms.Label()
         Me.UIDHelpLabel = New System.Windows.Forms.Label()
         Me.SoundChkBox = New System.Windows.Forms.CheckBox()
         Me.Tooltip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PlayImage = New System.Windows.Forms.PictureBox()
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.aboutVersion, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AboutVersion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PlayImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,29 +50,29 @@ Partial Class Form1
         Me.UIDTextBox.Size = New System.Drawing.Size(150, 23)
         Me.UIDTextBox.TabIndex = 2
         '
-        'logo
+        'Logo
         '
-        Me.logo.BackColor = System.Drawing.Color.Transparent
-        Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
-        Me.logo.Location = New System.Drawing.Point(12, 12)
-        Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(150, 30)
-        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.logo.TabIndex = 1
-        Me.logo.TabStop = False
+        Me.Logo.BackColor = System.Drawing.Color.Transparent
+        Me.Logo.Image = CType(resources.GetObject("Logo.Image"), System.Drawing.Image)
+        Me.Logo.Location = New System.Drawing.Point(12, 12)
+        Me.Logo.Name = "Logo"
+        Me.Logo.Size = New System.Drawing.Size(150, 30)
+        Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Logo.TabIndex = 1
+        Me.Logo.TabStop = False
         '
-        'aboutVersion
+        'AboutVersion
         '
-        Me.aboutVersion.BackColor = System.Drawing.Color.Transparent
-        Me.aboutVersion.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.aboutVersion.Image = CType(resources.GetObject("aboutVersion.Image"), System.Drawing.Image)
-        Me.aboutVersion.Location = New System.Drawing.Point(230, 22)
-        Me.aboutVersion.Name = "aboutVersion"
-        Me.aboutVersion.Size = New System.Drawing.Size(41, 10)
-        Me.aboutVersion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.aboutVersion.TabIndex = 2
-        Me.aboutVersion.TabStop = False
-        Me.Tooltip.SetToolTip(Me.aboutVersion, "About Screendere Beat")
+        Me.AboutVersion.BackColor = System.Drawing.Color.Transparent
+        Me.AboutVersion.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AboutVersion.Image = CType(resources.GetObject("AboutVersion.Image"), System.Drawing.Image)
+        Me.AboutVersion.Location = New System.Drawing.Point(230, 22)
+        Me.AboutVersion.Name = "AboutVersion"
+        Me.AboutVersion.Size = New System.Drawing.Size(41, 10)
+        Me.AboutVersion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.AboutVersion.TabIndex = 2
+        Me.AboutVersion.TabStop = False
+        Me.Tooltip.SetToolTip(Me.AboutVersion, "About Screendere Beat")
         '
         'UIDLabel
         '
@@ -148,8 +148,8 @@ Partial Class Form1
         Me.Controls.Add(Me.SoundChkBox)
         Me.Controls.Add(Me.UIDHelpLabel)
         Me.Controls.Add(Me.UIDLabel)
-        Me.Controls.Add(Me.aboutVersion)
-        Me.Controls.Add(Me.logo)
+        Me.Controls.Add(Me.AboutVersion)
+        Me.Controls.Add(Me.Logo)
         Me.Controls.Add(Me.UIDTextBox)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("MS Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -160,8 +160,8 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Screendere Beat"
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.aboutVersion, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AboutVersion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PlayImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -169,8 +169,8 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents UIDTextBox As TextBox
-    Friend WithEvents logo As PictureBox
-    Friend WithEvents aboutVersion As PictureBox
+    Friend WithEvents Logo As PictureBox
+    Friend WithEvents AboutVersion As PictureBox
     Friend WithEvents UIDLabel As Label
     Friend WithEvents UIDHelpLabel As Label
     Friend WithEvents SoundChkBox As CheckBox

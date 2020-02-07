@@ -120,11 +120,11 @@
   <metadata name="UIDTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="logo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Logo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="logo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Logo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAAeCAYAAADO4udXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAABthJREFUeF7tmY2R1DoQhC8EQiAEQiAEQiAEQngZEAIhEAIhEAIhEMK9/rRq1Uge
@@ -159,15 +159,15 @@
         wb+CHap2piDsXkydDz74UqbOBx98GZ+f/gdntp+HKpCFOgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="aboutVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="AboutVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="aboutVersion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AboutVersion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACkAAAAKCAYAAAApWHduAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAACLSURBVDhPnY1BEoAwCAP7/09rU4MDKEPTPXVDomOHa8KnxMkOG4NRD/vHP6NukfvSXio71F3u
-        v14eHH/ZDuou918vD46/bAd1l/vBTULoqPIOdZf7wU1C6KjyDnWX+8FNQuiocoAboAaqHKzRhLrovP0g
-        nx9wA9RAlYM1mlAXnbcf5FPiZIeN8SRj3PQI/wEhruXZAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACkAAAAKCAYAAAApWHduAAAABGdBTUEAALGPC/xhBQAAAItJREFUOE+d
+        jUESgDAIA/v/T2tTgwMoQ9M9dUOiY4drwqfEyQ4bg1EP+8c/o26R+9JeKjvUXe6/Xh4cf9kO6i73Xy8P
+        jr9sB3WX+8FNQuio8g51l/vBTULoqPIOdZf7wU1C6KhygBugBqocrNGEuui8/SCfH3AD1ECVgzWaUBed
+        tx/kU+Jkh43xJGPc9Aj/ASGu5dkAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="Tooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

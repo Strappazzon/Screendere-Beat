@@ -12,6 +12,7 @@
   <a href="https://strappazzon.xyz/Screendere-Beat"><img alt="HTML Version" src="https://img.shields.io/badge/HTML%20Version-%23ff5f2f?style=flat-square&logo=HTML5&logoColor=%23ffffff"></a>
   <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/Strappazzon/Screendere-Beat/total?color=%23085d9d&label=Downloads&logo=DocuSign&logoColor=%23ffffff&style=flat-square">
   <a href="https://github.com/Strappazzon/Screendere-Beat/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/Strappazzon/Screendere-Beat?color=%23a040d0&include_prereleases&label=Latest%20Release&style=flat-square"></a>
+  <a href="https://travis-ci.org/Strappazzon/Screendere-Beat/builds"><img alt="Build Status" src="https://img.shields.io/travis/Strappazzon/Screendere-Beat/ci?color=%23724cdb&label=Build&logo=travis-ci&logoColor=%23ffffff&style=flat-square"></a>
 </p>
 
 <p align="center">

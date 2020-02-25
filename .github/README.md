@@ -82,6 +82,14 @@ All settings are stored inside `%LOCALAPPDATA%\Screendere`
 
 You can [download](https://github.com/Strappazzon/Screendere-Beat/releases/latest) the latest version of Screendere Beat from the Releases page.
 
+## Contributing
+
+If you are interested in fixing issues and contributing directly to the code base, please see:
+
+* [Building Screendere Beat from its source code](https://github.com/Strappazzon/Screendere-Beat/blob/master/BUILDING.md)
+* [Contribution Guidelines](./CONTRIBUTING.md)
+* [Code of Conduct](./CODE_OF_CONDUCT.md)
+
 ## License
 
 ```

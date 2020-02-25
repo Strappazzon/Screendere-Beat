@@ -1,0 +1,4 @@
+language: csharp
+solution: src/Screendere.sln
+script:
+  - msbuild /p:Configuration=Release src/Screendere.sln

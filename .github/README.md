@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./Preview.png" alt="Screendere Beat"></a>
+  <img src="https://strappazzon.xyz/Screendere-Beat/assets/img/screenshot.png" alt="Screendere Beat"></a>
   <br>
   Screendere Beat
   <br>

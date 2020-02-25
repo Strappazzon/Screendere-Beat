@@ -23,6 +23,7 @@
 [Rr]es
 [Rr]esources
 *.ico
+!icon.ico
 
 .release
 

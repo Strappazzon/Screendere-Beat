@@ -1,3 +1,6 @@
+1.3.0
+ - Enhancement: The screenshot key (F12) won't be sent to the game so the dialogues will not be skipped when pressing it
+
 1.2.0
  - A screenshot will be captured only if the game has focus
  - Resized the main window

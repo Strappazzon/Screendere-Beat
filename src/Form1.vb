@@ -1,12 +1,8 @@
 ﻿Imports Microsoft.Win32
-Imports System.Drawing.Imaging
-Imports System.IO
-Imports Screendere.ProcessHelper
+Imports Screendere.SuppressKeys
 
 Public Class Form1
-    Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Integer
-    Private WithEvents KeyTimer As New Timer
-    Private SteamPath As String
+    Public Shared SteamPath As String
 
     Private Sub UpgradeSettings()
         'Migrate settings to the new version
@@ -16,51 +12,6 @@ Public Class Form1
             My.Settings.Upgrade()
             My.Settings.MustUpgrade = False
         End If
-    End Sub
-
-    Private Shared Function GetEncoderInfo(ByVal format As ImageFormat) As ImageCodecInfo
-        Dim Encoders() As ImageCodecInfo = ImageCodecInfo.GetImageEncoders()
-
-        Dim j As Integer = 0
-        While j < Encoders.Length
-            If Encoders(j).FormatID = format.Guid Then
-                Return Encoders(j)
-            End If
-
-            j += 1
-        End While
-
-        Return Nothing
-    End Function
-
-    Private Sub CaptureScreenshot()
-        Using S As New Bitmap(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height)
-            Using G = Graphics.FromImage(S)
-                Dim Screen As Size = New Size(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height)
-                G.CopyFromScreen(New Point(0, 0), New Point(0, 0), Screen)
-            End Using
-
-            'Screenshot quality
-            '//docs.microsoft.com/en-us/dotnet/api/system.drawing.imaging.encoderparameter
-            Dim EncoderParams As EncoderParameters = New EncoderParameters(1)
-            EncoderParams.Param(0) = New EncoderParameter(Encoder.Quality, 100L)
-
-            'Screenshot folder
-            Dim ScreenshotPath As String = SteamPath & "\userdata\" & UIDTextBox.Text & "\760\remote\759220\screenshots\"
-
-            'Create the screenshots folder if it doesn't exist
-            If Not Directory.Exists(ScreenshotPath) Then
-                Directory.CreateDirectory(ScreenshotPath)
-            End If
-
-            'Save the screenshot
-            S.Save(ScreenshotPath & Now.ToString("yyyyMMddHHmmss_fff") & ".jpg", GetEncoderInfo(ImageFormat.Jpeg), EncoderParams)
-
-            'Play screenshot sound
-            If SoundChkBox.Checked = True Then
-                My.Computer.Audio.Play(My.Resources.screenshot, AudioPlayMode.Background)
-            End If
-        End Using
     End Sub
 
     Private Sub Tooltip_Draw(sender As Object, e As DrawToolTipEventArgs) Handles Tooltip.Draw
@@ -82,13 +33,17 @@ Public Class Form1
         Using SteamRegKey As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Valve\Steam")
             Try
                 SteamPath = SteamRegKey.GetValue("InstallPath")
-
-                KeyTimer.Interval = 100
-                KeyTimer.Start()
             Catch ex As Exception
                 MessageBox.Show(("Screendere Beat was unable to detect the Steam installation folder: " & ex.Message()).Replace("..", "."), "Steam is not installed", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Application.Exit()
             End Try
+        End Using
+
+        'Intercept and suppress the screenshot key
+        Using OBJCURRENTMODULE As ProcessModule = Process.GetCurrentProcess().MainModule
+            'Assign callback function and set hook
+            OBJKEYBOARDPROCESS = New LowLevelKeyboardProc(AddressOf CaptureKey)
+            PTRHOOK = SetWindowsHookEx(13, OBJKEYBOARDPROCESS, GetModuleHandle(OBJCURRENTMODULE.ModuleName), 0)
         End Using
     End Sub
 
@@ -96,13 +51,6 @@ Public Class Form1
         'Save settings
         My.Settings.SteamUID = UIDTextBox.Text
         My.Settings.PlaySound = SoundChkBox.Checked
-    End Sub
-
-    Private Sub KeyTimer_Tick(sender As Object, ByVal e As EventArgs) Handles KeyTimer.Tick
-        'Capture a screenshot whenever F12 key is pressed if the user typed in a Steam user ID and the game has focus
-        If GetAsyncKeyState(Keys.F12) AndAlso (UIDTextBox.Text <> "" And (GetActiveProcess() IsNot Nothing AndAlso String.Equals(GetActiveProcess().ProcessName, "Hinedere Beat", StringComparison.OrdinalIgnoreCase))) Then
-            CaptureScreenshot()
-        End If
     End Sub
 
     Private Sub AboutLabel_Click(sender As Object, e As EventArgs) Handles AboutLabel.Click

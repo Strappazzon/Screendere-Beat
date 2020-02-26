@@ -105,6 +105,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ProcessHelper.vb" />
+    <Compile Include="ScreenshotHelper.vb" />
+    <Compile Include="SuppressKeys.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

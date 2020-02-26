@@ -63,14 +63,6 @@ By contributing to this repository, you agree to license your work under the cur
 
 ## Project Structure
 
-### Branches
-
-There are currently 2 branches on the repository:
-
-`master`: The branch with stable code and represents the released software.
-
-`dev`: The developing branch. It contains unstable, up-to-date code and it may not even work correctly.
-
 ### Repository Structure
 
 This is a brief description on how the repository files and folders are structured and what each one contains. It only contains the most relevant files and folders as most of them are brief and self-explanatory.

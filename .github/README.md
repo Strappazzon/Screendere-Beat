@@ -39,7 +39,7 @@ I'm aware that I could just use ShareX but the PrntScn key would capture all of 
 
 * Type your Steam ID inside the **Your Steam ID** field.
 
-> ### 🎮 How to get your Steam ID
+> ### :video_game: How to get your Steam ID
 >
 > * Go to <https://steamcommunity.com/id/my/tradeoffers/privacy>
 > * Scroll down the page until you find your **Trade URL**, under **Third-Party Sites**.
@@ -52,11 +52,7 @@ I'm aware that I could just use ShareX but the PrntScn key would capture all of 
 * [Run](steam://run/759220) Hinedere Beat.
 
 * Press the **F12** key to capture a screenshot.
-
-> ### 🔵 NOTICE
->
-> * When you press F12 to take a screenshot, **the game will skip to the next scene.** This is because the game acceps any key (even multimedia keys) to skip the dialogues.
-> * It is not possible to customize Screendere Beat's screenshot key (at least for now).
+  * It's not possible to customize Screendere Beat's screenshot key (at least for now).
 
 ### Uploading the Screenshots to Steam Cloud
 

@@ -7,7 +7,6 @@ Public Class Form1
     Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Integer
     Private WithEvents KeyTimer As New Timer
     Private SteamPath As String
-    Private Shared ReadOnly Quality As Encoder
 
     Private Sub UpgradeSettings()
         'Migrate settings to the new version

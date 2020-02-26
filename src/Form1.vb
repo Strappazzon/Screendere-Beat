@@ -1,6 +1,7 @@
 ﻿Imports Microsoft.Win32
 Imports System.Drawing.Imaging
 Imports System.IO
+Imports Screendere.ProcessHelper
 
 Public Class Form1
     Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Integer
@@ -100,7 +101,7 @@ Public Class Form1
 
     Private Sub KeyTimer_Tick(sender As Object, ByVal e As EventArgs) Handles KeyTimer.Tick
         'Capture a screenshot whenever F12 key is pressed if the user typed in a Steam user ID and the game has focus
-        If GetAsyncKeyState(Keys.F12) AndAlso (UIDTextBox.Text <> "" And (ProcessHelper.GetActiveProcess() IsNot Nothing AndAlso String.Equals(ProcessHelper.GetActiveProcess().ProcessName, "Hinedere Beat", StringComparison.OrdinalIgnoreCase))) Then
+        If GetAsyncKeyState(Keys.F12) AndAlso (UIDTextBox.Text <> "" And (GetActiveProcess() IsNot Nothing AndAlso String.Equals(GetActiveProcess().ProcessName, "Hinedere Beat", StringComparison.OrdinalIgnoreCase))) Then
             CaptureScreenshot()
         End If
     End Sub

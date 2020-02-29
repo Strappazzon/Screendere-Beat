@@ -87,6 +87,8 @@ a:hover { color: #c010b0; text-decoration: underline; }
 
 a:active { color: #c010b0; text-decoration: none; }
 
+a:link { word-wrap: break-word; overflow-wrap: break-word; }
+
 u { text-decoration: none; border-bottom: 2px solid #c010b0; }
 
 ul, .quote-text { line-height: 26px; }
@@ -134,7 +136,8 @@ code {
 	background-color: #fff;
 	border: 1px solid #000;
 	padding: 1px 3px 1px 3px;
-	word-break: keep-all;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 blockquote { border: 1px solid #fff; }
@@ -149,7 +152,7 @@ blockquote { border: 1px solid #fff; }
 
 .quote-text { margin: 0px; padding: 10px; }
 
-.quote-text + ul { margin-top: -5px; }
+.quote-text + ul { margin: -5px 10px 0 -10px; }
 
 .codeblock {
 	font-family: "Fixedsys Excelsior", monospace;

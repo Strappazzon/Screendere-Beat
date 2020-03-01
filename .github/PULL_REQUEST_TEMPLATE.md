@@ -1,4 +1,4 @@
-<!-- PLEASE READ SCREENDERE BEAT CODE OF CONDUCT (https://github.com/Strappazzon/Screendere-Beat/blob/master/.github/CODE_OF_CONDUCT.md) AND CONTRIBUTING GUIDELINES (https://github.com/Strappazzon/Screendere Beat/blob/master/.github/CONTRIBUTING.md) BEFORE SUBMITTING A PULL REQUEST -->
+<!-- PLEASE READ SCREENDERE BEAT CODE OF CONDUCT (https://github.com/Strappazzon/Screendere-Beat/blob/master/.github/CODE_OF_CONDUCT.md) AND CONTRIBUTING GUIDELINES (https://github.com/Strappazzon/Screendere-Beat/blob/master/.github/CONTRIBUTING.md) BEFORE SUBMITTING A PULL REQUEST -->
 
 ## Description
 

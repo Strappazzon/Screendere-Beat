@@ -53,13 +53,21 @@ Public Class Settings
         Dim Data As IniData = IniParser.ReadFile(SettingsFile)
 
         Dim PlayScreenshotSound As String = Data("screendere")("playsound")
-        Return Boolean.Parse(PlayScreenshotSound)
+        If PlayScreenshotSound <> Nothing Then
+            Return Boolean.Parse(PlayScreenshotSound)
+        Else
+            Return True
+        End If
     End Function
 
     Private Shared Function CheckUpdates() As Boolean
         Dim Data As IniData = IniParser.ReadFile(SettingsFile)
 
         Dim UpdatesEnabled As String = Data("screendere")("checkupdates")
-        Return Boolean.Parse(UpdatesEnabled)
+        If UpdatesEnabled <> Nothing Then
+            Return Boolean.Parse(UpdatesEnabled)
+        Else
+            Return False
+        End If
     End Function
 End Class

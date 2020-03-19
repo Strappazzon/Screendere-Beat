@@ -2,32 +2,12 @@
 Imports System.IO
 
 Public Class ScreenshotHelper
-    Private Shared Function GetEncoderInfo(ByVal format As ImageFormat) As ImageCodecInfo
-        Dim Encoders() As ImageCodecInfo = ImageCodecInfo.GetImageEncoders()
-
-        Dim j As Integer = 0
-        While j < Encoders.Length
-            If Encoders(j).FormatID = format.Guid Then
-                Return Encoders(j)
-            End If
-
-            j += 1
-        End While
-
-        Return Nothing
-    End Function
-
     Public Shared Sub CaptureScreenshot()
-        Using S As New Bitmap(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height)
-            Using G = Graphics.FromImage(S)
-                Dim Screen As Size = New Size(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height)
-                G.CopyFromScreen(New Point(0, 0), New Point(0, 0), Screen)
+        Using Img As Image = New Bitmap(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height, PixelFormat.Format24bppRgb)
+            Using G As Graphics = Graphics.FromImage(Img)
+                Dim ScreenSize As Size = New Size(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height)
+                G.CopyFromScreen(New Point(0, 0), New Point(0, 0), ScreenSize, CopyPixelOperation.SourceCopy)
             End Using
-
-            'Screenshot quality
-            '//docs.microsoft.com/en-us/dotnet/api/system.drawing.imaging.encoderparameter
-            Dim EncoderParams As EncoderParameters = New EncoderParameters(1)
-            EncoderParams.Param(0) = New EncoderParameter(Encoder.Quality, 100L)
 
             'Screenshot folder
             Dim ScreenshotPath As String = Form1.SteamPath & "\userdata\" & Form1.UIDTextBox.Text & "\760\remote\759220\screenshots\"
@@ -38,7 +18,7 @@ Public Class ScreenshotHelper
             End If
 
             'Save the screenshot
-            S.Save(ScreenshotPath & Now.ToString("yyyyMMddHHmmss_fff") & ".jpg", GetEncoderInfo(ImageFormat.Jpeg), EncoderParams)
+            Img.Save(ScreenshotPath & Now.ToString("yyyyMMddHHmmss_fff") & ".png", ImageFormat.Png)
 
             'Play screenshot sound
             If Form1.SoundChkBox.Checked = True Then

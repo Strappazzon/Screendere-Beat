@@ -135,7 +135,7 @@ Partial Class Form1
         Me.AboutLabel.Name = "AboutLabel"
         Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
         Me.AboutLabel.TabIndex = 4
-        Me.AboutLabel.Text = "v1.3.0"
+        Me.AboutLabel.Text = "v1.4.0"
         Me.Tooltip.SetToolTip(Me.AboutLabel, "About Screendere Beat")
         '
         'Form1

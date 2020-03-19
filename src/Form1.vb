@@ -17,7 +17,7 @@ Public Class Form1
             Try
                 SteamPath = SteamRegKey.GetValue("InstallPath")
             Catch ex As Exception
-                MessageBox.Show(("Screendere Beat was unable to detect the Steam installation folder: " & ex.Message()).Replace("..", "."), "Steam is not installed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Screendere Beat was unable to detect the Steam installation folder: " & ex.Message(), "Steam is not installed", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Application.Exit()
             End Try
         End Using

@@ -53,42 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property SteamUID() As String
-            Get
-                Return CType(Me("SteamUID"),String)
-            End Get
-            Set
-                Me("SteamUID") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public Property PlaySound() As Boolean
-            Get
-                Return CType(Me("PlaySound"),Boolean)
-            End Get
-            Set
-                Me("PlaySound") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
-        Public Property MustUpgrade() As Boolean
-            Get
-                Return CType(Me("MustUpgrade"),Boolean)
-            End Get
-            Set
-                Me("MustUpgrade") = value
-            End Set
-        End Property
     End Class
 End Namespace
 

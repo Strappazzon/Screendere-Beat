@@ -109,6 +109,7 @@
     </Compile>
     <Compile Include="ProcessHelper.vb" />
     <Compile Include="ScreenshotHelper.vb" />
+    <Compile Include="Settings.vb" />
     <Compile Include="SuppressKeys.vb" />
   </ItemGroup>
   <ItemGroup>

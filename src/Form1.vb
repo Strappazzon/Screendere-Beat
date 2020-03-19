@@ -1,19 +1,8 @@
 ﻿Imports Microsoft.Win32
+Imports Screendere.Settings
 Imports Screendere.SuppressKeys
 
 Public Class Form1
-    Public Shared SteamPath As String
-
-    Private Sub UpgradeSettings()
-        'Migrate settings to the new version
-        'Unfortunately, settings migrate only if the new version is installed in the same directory as the old version
-        '//bytes.com/topic/visual-basic-net/answers/854235-my-settings-upgrade-doesnt-upgrade#post3426232
-        If My.Settings.MustUpgrade = True Then
-            My.Settings.Upgrade()
-            My.Settings.MustUpgrade = False
-        End If
-    End Sub
-
     Private Sub Tooltip_Draw(sender As Object, e As DrawToolTipEventArgs) Handles Tooltip.Draw
         'Draw tooltip with custom colors
         e.DrawBackground()
@@ -22,12 +11,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Migrate settings from old version
-        UpgradeSettings()
-
         'Load settings
-        UIDTextBox.Text = My.Settings.SteamUID
-        SoundChkBox.Checked = My.Settings.PlaySound
+        InitSettings()
 
         'Check if Steam is installed
         Using SteamRegKey As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Valve\Steam")
@@ -49,8 +34,7 @@ Public Class Form1
 
     Private Sub Form1_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         'Save settings
-        My.Settings.SteamUID = UIDTextBox.Text
-        My.Settings.PlaySound = SoundChkBox.Checked
+        SaveSettings()
     End Sub
 
     Private Sub AboutLabel_Click(sender As Object, e As EventArgs) Handles AboutLabel.Click

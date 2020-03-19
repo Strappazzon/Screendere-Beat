@@ -27,9 +27,7 @@
 
 **Screendere Beat** is a small software to take screenshots of Hinedere Beat.
 
-I created it because the developer disabled the ability to take screenshots in the Steam version when launching the game in its [uncensored state](https://www.blazeepic.com/uploads/2/2/4/4/22443112/hinederebeat_uncensor.txt).
-
-I'm aware that I could just use ShareX but the PrntScn key would capture all of my desktops.
+I created it because the developer disabled the Steam screenshot key when launching the game in its [uncensored state](https://www.blazeepic.com/uploads/2/2/4/4/22443112/hinederebeat_uncensor.txt).
 
 ## Getting Started
 

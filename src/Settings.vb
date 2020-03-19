@@ -10,6 +10,7 @@ Public Class Settings
         If File.Exists(SettingsFile) Then
             Form1.UIDTextBox.Text = SteamID()
             Form1.SoundChkBox.Checked = PlaySound()
+            Form1.UpdatesChkBox.Checked = CheckUpdates()
         Else
             'Create directory
             Directory.CreateDirectory(SettingsFile.Replace("\settings.ini", ""))
@@ -18,6 +19,7 @@ Public Class Settings
             Dim Data As IniData = New IniData()
             Data("screendere")("steamid") = Nothing
             Data("screendere")("playsound") = "True"
+            Data("screendere")("checkupdates") = "False"
 
             'Write settings to file
             File.WriteAllText(SettingsFile, Data.ToString())
@@ -29,6 +31,7 @@ Public Class Settings
         Dim Data As IniData = New IniData()
         Data("screendere")("steamid") = Form1.UIDTextBox.Text
         Data("screendere")("playsound") = Form1.SoundChkBox.Checked
+        Data("screendere")("checkupdates") = Form1.UpdatesChkBox.Checked
 
         'Create directory if it's been deleted
         If Not Directory.Exists(SettingsFile.Replace("\settings.ini", "")) Then
@@ -51,5 +54,12 @@ Public Class Settings
 
         Dim PlayScreenshotSound As String = Data("screendere")("playsound")
         Return Boolean.Parse(PlayScreenshotSound)
+    End Function
+
+    Private Shared Function CheckUpdates() As Boolean
+        Dim Data As IniData = IniParser.ReadFile(SettingsFile)
+
+        Dim UpdatesEnabled As String = Data("screendere")("checkupdates")
+        Return Boolean.Parse(UpdatesEnabled)
     End Function
 End Class

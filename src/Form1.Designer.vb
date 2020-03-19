@@ -33,6 +33,7 @@ Partial Class Form1
         Me.PlayImage = New System.Windows.Forms.PictureBox()
         Me.AboutLabel = New System.Windows.Forms.Label()
         Me.ScreenshotsDirBtn = New System.Windows.Forms.Button()
+        Me.UpdatesChkBox = New System.Windows.Forms.CheckBox()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PlayImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -156,12 +157,29 @@ Partial Class Form1
         Me.Tooltip.SetToolTip(Me.ScreenshotsDirBtn, "Open the screenshots folder")
         Me.ScreenshotsDirBtn.UseVisualStyleBackColor = False
         '
+        'UpdatesChkBox
+        '
+        Me.UpdatesChkBox.AutoSize = True
+        Me.UpdatesChkBox.BackColor = System.Drawing.Color.Transparent
+        Me.UpdatesChkBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.UpdatesChkBox.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.UpdatesChkBox.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UpdatesChkBox.ForeColor = System.Drawing.Color.White
+        Me.UpdatesChkBox.Location = New System.Drawing.Point(143, 117)
+        Me.UpdatesChkBox.Name = "UpdatesChkBox"
+        Me.UpdatesChkBox.Size = New System.Drawing.Size(117, 17)
+        Me.UpdatesChkBox.TabIndex = 6
+        Me.UpdatesChkBox.Text = "Check Updates"
+        Me.Tooltip.SetToolTip(Me.UpdatesChkBox, "Check for updates when you open Screendere Beat")
+        Me.UpdatesChkBox.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(274, 146)
+        Me.Controls.Add(Me.UpdatesChkBox)
         Me.Controls.Add(Me.ScreenshotsDirBtn)
         Me.Controls.Add(Me.AboutLabel)
         Me.Controls.Add(Me.PlayImage)
@@ -195,4 +213,5 @@ Partial Class Form1
     Friend WithEvents PlayImage As PictureBox
     Friend WithEvents AboutLabel As Label
     Friend WithEvents ScreenshotsDirBtn As Button
+    Friend WithEvents UpdatesChkBox As CheckBox
 End Class

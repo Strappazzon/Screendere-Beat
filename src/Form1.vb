@@ -3,6 +3,7 @@ Imports System.IO
 Imports Screendere.ScreenshotHelper
 Imports Screendere.Settings
 Imports Screendere.SuppressKeys
+Imports Screendere.Updater
 
 Public Class Form1
     Private Sub Tooltip_Draw(sender As Object, e As DrawToolTipEventArgs) Handles Tooltip.Draw
@@ -25,6 +26,9 @@ Public Class Form1
 
         'Load settings
         InitSettings()
+
+        'Check for updates
+        CheckUpdates()
 
         'Intercept and suppress the screenshot key
         Using OBJCURRENTMODULE As ProcessModule = Process.GetCurrentProcess().MainModule

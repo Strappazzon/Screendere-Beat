@@ -111,6 +111,7 @@
     <Compile Include="ScreenshotHelper.vb" />
     <Compile Include="Settings.vb" />
     <Compile Include="SuppressKeys.vb" />
+    <Compile Include="Updater.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

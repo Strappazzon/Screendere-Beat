@@ -89,6 +89,8 @@ Partial Class Form1
         '
         Me.SoundChkBox.AutoSize = True
         Me.SoundChkBox.BackColor = System.Drawing.Color.Transparent
+        Me.SoundChkBox.Checked = True
+        Me.SoundChkBox.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SoundChkBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SoundChkBox.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SoundChkBox.ForeColor = System.Drawing.Color.White

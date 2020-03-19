@@ -17,7 +17,7 @@ Public Class Settings
             'Create settings
             Dim Data As IniData = New IniData()
             Data("screendere")("steamid") = Nothing
-            Data("screendere")("playsound") = False
+            Data("screendere")("playsound") = "True"
 
             'Write settings to file
             File.WriteAllText(SettingsFile, Data.ToString())

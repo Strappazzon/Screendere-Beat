@@ -1,4 +1,5 @@
 ﻿Imports Microsoft.Win32
+Imports System.IO
 Imports Screendere.ScreenshotHelper
 Imports Screendere.Settings
 Imports Screendere.SuppressKeys
@@ -56,6 +57,14 @@ Public Class Form1
         'Accept only numbers
         If Not Char.IsNumber(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
             e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub ScreenshotsDirBtn_Click(sender As Object, e As EventArgs) Handles ScreenshotsDirBtn.Click
+        If Directory.Exists(ScreenshotPath) Then
+            Process.Start(ScreenshotPath)
+        Else
+            MessageBox.Show("The screenshots path doesn't exist.", Text)
         End If
     End Sub
 End Class

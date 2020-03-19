@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Tooltip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PlayImage = New System.Windows.Forms.PictureBox()
         Me.AboutLabel = New System.Windows.Forms.Label()
+        Me.ScreenshotsDirBtn = New System.Windows.Forms.Button()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PlayImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -97,7 +98,7 @@ Partial Class Form1
         Me.SoundChkBox.Location = New System.Drawing.Point(13, 117)
         Me.SoundChkBox.Name = "SoundChkBox"
         Me.SoundChkBox.Size = New System.Drawing.Size(110, 17)
-        Me.SoundChkBox.TabIndex = 3
+        Me.SoundChkBox.TabIndex = 4
         Me.SoundChkBox.Text = "Play a Sound"
         Me.Tooltip.SetToolTip(Me.SoundChkBox, "Play a sound when a screenshot is taken")
         Me.SoundChkBox.UseVisualStyleBackColor = False
@@ -118,7 +119,7 @@ Partial Class Form1
         Me.PlayImage.BackColor = System.Drawing.Color.Transparent
         Me.PlayImage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PlayImage.Image = CType(resources.GetObject("PlayImage.Image"), System.Drawing.Image)
-        Me.PlayImage.Location = New System.Drawing.Point(190, 55)
+        Me.PlayImage.Location = New System.Drawing.Point(210, 50)
         Me.PlayImage.Name = "PlayImage"
         Me.PlayImage.Size = New System.Drawing.Size(50, 53)
         Me.PlayImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -133,19 +134,35 @@ Partial Class Form1
         Me.AboutLabel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AboutLabel.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutLabel.ForeColor = System.Drawing.Color.White
-        Me.AboutLabel.Location = New System.Drawing.Point(192, 22)
+        Me.AboutLabel.Location = New System.Drawing.Point(214, 22)
         Me.AboutLabel.Name = "AboutLabel"
         Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
-        Me.AboutLabel.TabIndex = 4
+        Me.AboutLabel.TabIndex = 5
         Me.AboutLabel.Text = "v1.4.0"
         Me.Tooltip.SetToolTip(Me.AboutLabel, "About Screendere Beat")
+        '
+        'ScreenshotsDirBtn
+        '
+        Me.ScreenshotsDirBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.ScreenshotsDirBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.ScreenshotsDirBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ScreenshotsDirBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ScreenshotsDirBtn.ForeColor = System.Drawing.Color.White
+        Me.ScreenshotsDirBtn.Image = CType(resources.GetObject("ScreenshotsDirBtn.Image"), System.Drawing.Image)
+        Me.ScreenshotsDirBtn.Location = New System.Drawing.Point(169, 80)
+        Me.ScreenshotsDirBtn.Name = "ScreenshotsDirBtn"
+        Me.ScreenshotsDirBtn.Size = New System.Drawing.Size(23, 23)
+        Me.ScreenshotsDirBtn.TabIndex = 3
+        Me.Tooltip.SetToolTip(Me.ScreenshotsDirBtn, "Open the screenshots folder")
+        Me.ScreenshotsDirBtn.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(264, 146)
+        Me.ClientSize = New System.Drawing.Size(274, 146)
+        Me.Controls.Add(Me.ScreenshotsDirBtn)
         Me.Controls.Add(Me.AboutLabel)
         Me.Controls.Add(Me.PlayImage)
         Me.Controls.Add(Me.SoundChkBox)
@@ -177,4 +194,5 @@ Partial Class Form1
     Friend WithEvents Tooltip As ToolTip
     Friend WithEvents PlayImage As PictureBox
     Friend WithEvents AboutLabel As Label
+    Friend WithEvents ScreenshotsDirBtn As Button
 End Class

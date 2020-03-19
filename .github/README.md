@@ -45,7 +45,7 @@ I created it because the developer disabled the Steam screenshot key when launch
 > * The number between `?partner=` and `&token=` is your ID.
 >   * In this example your ID would be `1234567890`
 
-* Tick **Play a Sound** if you want to hear a sound whenever a screenshot is taken.
+* Untick **Play a Sound** if you don't want to hear a sound whenever a screenshot is taken.
 
 * [Run](steam://run/759220) Hinedere Beat.
 
@@ -58,7 +58,7 @@ Steam normally doesn't allow you to upload custom screenshots.
 
 You can work around it by either:
 
-* Manually [modifying screenshots.vdf](https://gaming.stackexchange.com/a/282581)
+* Converting the screenshots to JPEG and manually [modifying screenshots.vdf](https://gaming.stackexchange.com/a/282581)
 * Using [SteaScree](https://steascree.download/)
 
 ## Settings
@@ -68,8 +68,12 @@ You can work around it by either:
   * Needed to create the screenshot save path
 
 * **Play a Sound**
-  * _Disabled by default_
+  * _Enabled by default_
   * Play a sound when a screenshot is taken
+
+* **Check Updates**
+  * _Disabled by default_
+  * The program will connect to GitHub servers to check if the current version is up to date
 
 All settings are stored inside `%LOCALAPPDATA%\Screendere`
 

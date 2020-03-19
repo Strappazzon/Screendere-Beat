@@ -39,14 +39,14 @@ Public Class Settings
         File.WriteAllText(SettingsFile, Data.ToString())
     End Sub
 
-    Public Shared Function SteamID() As String
+    Private Shared Function SteamID() As String
         Dim Data As IniData = IniParser.ReadFile(SettingsFile)
 
         Dim SteamUID As String = Data("screendere")("steamid")
         Return SteamUID
     End Function
 
-    Public Shared Function PlaySound() As Boolean
+    Private Shared Function PlaySound() As Boolean
         Dim Data As IniData = IniParser.ReadFile(SettingsFile)
 
         Dim PlayScreenshotSound As String = Data("screendere")("playsound")

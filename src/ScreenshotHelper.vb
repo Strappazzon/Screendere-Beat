@@ -2,6 +2,8 @@
 Imports System.IO
 
 Public Class ScreenshotHelper
+    Public Shared Property SteamPath As String
+
     Public Shared Sub CaptureScreenshot()
         Using Img As Image = New Bitmap(My.Computer.Screen.Bounds.Width, My.Computer.Screen.Bounds.Height, PixelFormat.Format24bppRgb)
             Using G As Graphics = Graphics.FromImage(Img)
@@ -10,7 +12,7 @@ Public Class ScreenshotHelper
             End Using
 
             'Screenshot folder
-            Dim ScreenshotPath As String = Form1.SteamPath & "\userdata\" & Form1.UIDTextBox.Text & "\760\remote\759220\screenshots\"
+            Dim ScreenshotPath As String = SteamPath & "\userdata\" & Form1.UIDTextBox.Text & "\760\remote\759220\screenshots\"
 
             'Create the screenshots folder if it doesn't exist
             If Not Directory.Exists(ScreenshotPath) Then

@@ -1,4 +1,5 @@
 ﻿Imports Microsoft.Win32
+Imports Screendere.ScreenshotHelper
 Imports Screendere.Settings
 Imports Screendere.SuppressKeys
 
@@ -11,9 +12,6 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Load settings
-        InitSettings()
-
         'Check if Steam is installed
         Using SteamRegKey As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Valve\Steam")
             Try
@@ -23,6 +21,9 @@ Public Class Form1
                 Application.Exit()
             End Try
         End Using
+
+        'Load settings
+        InitSettings()
 
         'Intercept and suppress the screenshot key
         Using OBJCURRENTMODULE As ProcessModule = Process.GetCurrentProcess().MainModule

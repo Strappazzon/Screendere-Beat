@@ -29,8 +29,6 @@
 
 I created it because the developer disabled the ability to take screenshots in the Steam version when launching the game in its [uncensored state](https://www.blazeepic.com/uploads/2/2/4/4/22443112/hinederebeat_uncensor.txt).
 
-I'm aware that I could just use ShareX but the PrntScn key would capture all of my desktops.
-
 ## Getting Started
 
 * Launch **Screendere Beat.exe**.

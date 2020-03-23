@@ -1,3 +1,0 @@
-Copyright (c) Valve Corporation. All rights reserved.
-
-- Screenshot sound effect (screenshot.wav)

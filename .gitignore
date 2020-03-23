@@ -26,8 +26,14 @@
 [Tt]humbs.db
 
 # Custom application assets/resources
-[Rr]es
-[Rr]esources
+!**/[Rr]es
+**/[Rr]es/logo.*
+**/[Rr]es/icon.*
+**/[Rr]es/play.*
+!**/[Rr]esources
+**/[Rr]esources/logo.*
+**/[Rr]esources/icon.*
+**/[Rr]esources/play.*
 *.ico
 !icon.ico
 

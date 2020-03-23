@@ -22,7 +22,7 @@ Public Class ScreenshotHelper
 
             'Play screenshot sound
             If Form1.SoundChkBox.Checked = True Then
-                My.Computer.Audio.Play(My.Resources.screenshot, AudioPlayMode.Background)
+                My.Computer.Audio.Play(My.Resources.Screenshot, AudioPlayMode.Background)
             End If
         End Using
     End Sub

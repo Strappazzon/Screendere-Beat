@@ -149,7 +149,7 @@ Partial Class Form1
         Me.ScreenshotsDirBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.ScreenshotsDirBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ScreenshotsDirBtn.ForeColor = System.Drawing.Color.White
-        Me.ScreenshotsDirBtn.Image = CType(resources.GetObject("ScreenshotsDirBtn.Image"), System.Drawing.Image)
+        Me.ScreenshotsDirBtn.Image = Global.Screendere.My.Resources.Resources.Folder_Icon
         Me.ScreenshotsDirBtn.Location = New System.Drawing.Point(169, 80)
         Me.ScreenshotsDirBtn.Name = "ScreenshotsDirBtn"
         Me.ScreenshotsDirBtn.Size = New System.Drawing.Size(23, 23)

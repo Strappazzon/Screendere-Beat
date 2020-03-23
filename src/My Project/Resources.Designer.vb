@@ -61,11 +61,21 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Folder_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Folder_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property screenshot() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property Screenshot() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("screenshot", resourceCulture)
+                Return ResourceManager.GetStream("Screenshot", resourceCulture)
             End Get
         End Property
     End Module

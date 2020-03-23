@@ -120,6 +120,36 @@
   <metadata name="UIDTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="UIDLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="UIDHelpLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SoundChkBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Tooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>9, 10</value>
+  </metadata>
+  <metadata name="UpdatesChkBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="PlayBtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="AboutBtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SettingsBtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ScreenshotsDirBtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="AboutLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Logo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -159,63 +189,6 @@
         wb+CHap2piDsXkydDz74UqbOBx98GZ+f/gdntp+HKpCFOgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="UIDLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="UIDHelpLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="SoundChkBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Tooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>9, 10</value>
-  </metadata>
-  <metadata name="PlayImage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="PlayImage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <metadata name="AboutLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ScreenshotsDirBtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="UpdatesChkBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

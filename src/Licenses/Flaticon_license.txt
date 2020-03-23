@@ -1,4 +1,6 @@
 Flaticon
 https://www.flaticon.com
 
-- Folder (folder.png) https://www.flaticon.com/free-icon/folder_391319?page=1&position=9
+- Folder (folder.png) https://www.flaticon.com/free-icon/folder_391319
+- Settings (settings.png) https://www.flaticon.com/free-icon/settings_465270
+- About (info.png) https://www.flaticon.com/free-icon/info_408155

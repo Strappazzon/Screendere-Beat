@@ -35,11 +35,11 @@ Public Class Form1
         Settings.Save()
     End Sub
 
-    Private Sub AboutLabel_Click(sender As Object, e As EventArgs) Handles AboutLabel.Click
+    Private Sub AboutBtn_Click(sender As Object, e As EventArgs) Handles AboutBtn.Click
         FormAbout.ShowDialog()
     End Sub
 
-    Private Sub PlayImage_Click(sender As Object, e As EventArgs) Handles PlayImage.Click
+    Private Sub PlayBtn_Click(sender As Object, e As EventArgs) Handles PlayBtn.Click
         Process.Start("steam://run/759220")
     End Sub
 

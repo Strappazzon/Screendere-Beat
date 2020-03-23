@@ -2,7 +2,7 @@
 Imports Screendere.ProcessHelper
 Imports Screendere.ScreenshotHelper
 
-Public Class SuppressKeys
+Public Class KeyboardHook
     'Low-level keyboard input event
     <StructLayout(LayoutKind.Sequential)>
     Private Structure KBDLLHOOKSTRUCT
@@ -41,8 +41,7 @@ Public Class SuppressKeys
     Private Const WM_KEYDOWN As Integer = &H100
 
     Public Shared Function CaptureKey(ByVal nCode As Integer, ByVal wParam As IntPtr, ByVal lParam As IntPtr) As IntPtr
-        '//stackoverflow.com/a/28073683
-        If nCode >= 0 AndAlso wParam = CType(WM_KEYDOWN, IntPtr) Then
+        If nCode >= 0 AndAlso wParam = CType(WM_KEYDOWN, IntPtr) Then '//stackoverflow.com/a/28073683
             Dim OBJKEYINFO As KBDLLHOOKSTRUCT = Marshal.PtrToStructure(lParam, GetType(KBDLLHOOKSTRUCT))
             If OBJKEYINFO.KEY = Keys.F12 Then
                 If Form1.UIDTextBox.Text <> "" And (GetActiveProcess() IsNot Nothing AndAlso String.Equals(GetActiveProcess().ProcessName, "Hinedere Beat", StringComparison.OrdinalIgnoreCase)) Then

@@ -1,11 +1,12 @@
-﻿'//stackoverflow.com/a/41882415
-Public NotInheritable Class ProcessHelper
+﻿Public NotInheritable Class ProcessHelper
     Private Sub New()
     End Sub
 
     Private Declare Function GetForegroundWindow Lib "user32" () As IntPtr
     Private Declare Function GetWindowThreadProcessId Lib "user32" (ByVal hWnd As IntPtr, ByRef lpdwProcessId As UInteger) As Integer
 
+    'Check if the game has focus
+    '//stackoverflow.com/a/41882415
     Public Shared Function GetActiveProcess() As Process
         Dim FocusedWindow As IntPtr = GetForegroundWindow()
         If FocusedWindow = IntPtr.Zero Then

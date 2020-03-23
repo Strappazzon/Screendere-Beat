@@ -1,8 +1,7 @@
-﻿Imports Microsoft.Win32
-Imports System.IO
+﻿Imports System.IO
 Imports Screendere.ScreenshotHelper
-Imports Screendere.Settings
-Imports Screendere.SuppressKeys
+Imports Screendere.SteamHelper
+Imports Screendere.KeyboardHook
 Imports Screendere.Updater
 
 Public Class Form1
@@ -15,17 +14,10 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Check if Steam is installed
-        Using SteamRegKey As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Valve\Steam")
-            Try
-                SteamPath = SteamRegKey.GetValue("InstallPath")
-            Catch ex As Exception
-                MessageBox.Show("Screendere Beat was unable to detect the Steam installation folder: " & ex.Message(), "Steam is not installed", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Application.Exit()
-            End Try
-        End Using
+        GetSteamInstall()
 
         'Load settings
-        InitSettings()
+        Settings.Init()
 
         'Check for updates
         CheckUpdates()
@@ -40,7 +32,7 @@ Public Class Form1
 
     Private Sub Form1_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         'Save settings
-        SaveSettings()
+        Settings.Save()
     End Sub
 
     Private Sub AboutLabel_Click(sender As Object, e As EventArgs) Handles AboutLabel.Click

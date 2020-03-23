@@ -79,17 +79,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Screendere.UI\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="Screendere.UI\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAbout.Designer.vb">
+    <Compile Include="Screendere.UI\FormAbout.Designer.vb">
       <DependentUpon>FormAbout.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormAbout.vb">
+    <Compile Include="Screendere.UI\FormAbout.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -107,17 +107,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ProcessHelper.vb" />
-    <Compile Include="ScreenshotHelper.vb" />
+    <Compile Include="Screendere.Helpers\ProcessHelper.vb" />
+    <Compile Include="Screendere.Helpers\ScreenshotHelper.vb" />
+    <Compile Include="Screendere.Helpers\SteamHelper.vb" />
     <Compile Include="Settings.vb" />
-    <Compile Include="SuppressKeys.vb" />
+    <Compile Include="Screendere.Hooks\KeyboardHook.vb" />
     <Compile Include="Updater.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Screendere.UI\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAbout.resx">
+    <EmbeddedResource Include="Screendere.UI\FormAbout.resx">
       <DependentUpon>FormAbout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

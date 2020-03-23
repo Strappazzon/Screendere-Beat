@@ -1,8 +1,8 @@
 ﻿Imports System.Drawing.Imaging
 Imports System.IO
+Imports Screendere.SteamHelper
 
 Public Class ScreenshotHelper
-    Public Shared Property SteamPath As String
     Public Shared Property ScreenshotPath As String = SteamPath & "\userdata\" & Form1.UIDTextBox.Text & "\760\remote\759220\screenshots\"
 
     Public Shared Sub CaptureScreenshot()

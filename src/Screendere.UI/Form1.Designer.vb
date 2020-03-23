@@ -27,14 +27,12 @@ Partial Class Form1
         Me.UIDTextBox = New System.Windows.Forms.TextBox()
         Me.UIDLabel = New System.Windows.Forms.Label()
         Me.UIDHelpLabel = New System.Windows.Forms.Label()
-        Me.SoundChkBox = New System.Windows.Forms.CheckBox()
         Me.Tooltip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.UpdatesChkBox = New System.Windows.Forms.CheckBox()
         Me.PlayBtn = New System.Windows.Forms.Button()
+        Me.AboutLabel = New System.Windows.Forms.Label()
         Me.AboutBtn = New System.Windows.Forms.Button()
         Me.SettingsBtn = New System.Windows.Forms.Button()
         Me.ScreenshotsDirBtn = New System.Windows.Forms.Button()
-        Me.AboutLabel = New System.Windows.Forms.Label()
         Me.Logo = New System.Windows.Forms.PictureBox()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,23 +75,6 @@ Partial Class Form1
         Me.UIDHelpLabel.TabIndex = 1
         Me.UIDHelpLabel.Text = "[?]"
         '
-        'SoundChkBox
-        '
-        Me.SoundChkBox.AutoSize = True
-        Me.SoundChkBox.BackColor = System.Drawing.Color.Transparent
-        Me.SoundChkBox.Checked = True
-        Me.SoundChkBox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.SoundChkBox.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SoundChkBox.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SoundChkBox.ForeColor = System.Drawing.Color.White
-        Me.SoundChkBox.Location = New System.Drawing.Point(13, 117)
-        Me.SoundChkBox.Name = "SoundChkBox"
-        Me.SoundChkBox.Size = New System.Drawing.Size(110, 17)
-        Me.SoundChkBox.TabIndex = 8
-        Me.SoundChkBox.Text = "Play a Sound"
-        Me.Tooltip.SetToolTip(Me.SoundChkBox, "Play a sound when a screenshot is taken")
-        Me.SoundChkBox.UseVisualStyleBackColor = False
-        '
         'Tooltip
         '
         Me.Tooltip.AutoPopDelay = 5000
@@ -104,22 +85,6 @@ Partial Class Form1
         Me.Tooltip.ReshowDelay = 100
         Me.Tooltip.UseAnimation = False
         Me.Tooltip.UseFading = False
-        '
-        'UpdatesChkBox
-        '
-        Me.UpdatesChkBox.AutoSize = True
-        Me.UpdatesChkBox.BackColor = System.Drawing.Color.Transparent
-        Me.UpdatesChkBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.UpdatesChkBox.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.UpdatesChkBox.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UpdatesChkBox.ForeColor = System.Drawing.Color.White
-        Me.UpdatesChkBox.Location = New System.Drawing.Point(133, 117)
-        Me.UpdatesChkBox.Name = "UpdatesChkBox"
-        Me.UpdatesChkBox.Size = New System.Drawing.Size(117, 17)
-        Me.UpdatesChkBox.TabIndex = 9
-        Me.UpdatesChkBox.Text = "Check Updates"
-        Me.Tooltip.SetToolTip(Me.UpdatesChkBox, "Check for updates when you open Screendere Beat")
-        Me.UpdatesChkBox.UseVisualStyleBackColor = False
         '
         'PlayBtn
         '
@@ -135,6 +100,18 @@ Partial Class Form1
         Me.PlayBtn.Text = "Play"
         Me.Tooltip.SetToolTip(Me.PlayBtn, "Play Hinedere Beat")
         Me.PlayBtn.UseVisualStyleBackColor = False
+        '
+        'AboutLabel
+        '
+        Me.AboutLabel.AutoSize = True
+        Me.AboutLabel.BackColor = System.Drawing.Color.Transparent
+        Me.AboutLabel.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AboutLabel.ForeColor = System.Drawing.Color.White
+        Me.AboutLabel.Location = New System.Drawing.Point(208, 22)
+        Me.AboutLabel.Name = "AboutLabel"
+        Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
+        Me.AboutLabel.TabIndex = 4
+        Me.AboutLabel.Text = "v1.4.0"
         '
         'AboutBtn
         '
@@ -178,18 +155,6 @@ Partial Class Form1
         Me.Tooltip.SetToolTip(Me.ScreenshotsDirBtn, "Open the screenshots folder")
         Me.ScreenshotsDirBtn.UseVisualStyleBackColor = False
         '
-        'AboutLabel
-        '
-        Me.AboutLabel.AutoSize = True
-        Me.AboutLabel.BackColor = System.Drawing.Color.Transparent
-        Me.AboutLabel.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AboutLabel.ForeColor = System.Drawing.Color.White
-        Me.AboutLabel.Location = New System.Drawing.Point(208, 22)
-        Me.AboutLabel.Name = "AboutLabel"
-        Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
-        Me.AboutLabel.TabIndex = 4
-        Me.AboutLabel.Text = "v1.4.0"
-        '
         'Logo
         '
         Me.Logo.BackColor = System.Drawing.Color.Transparent
@@ -206,14 +171,12 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(262, 146)
+        Me.ClientSize = New System.Drawing.Size(262, 116)
         Me.Controls.Add(Me.PlayBtn)
         Me.Controls.Add(Me.AboutBtn)
         Me.Controls.Add(Me.SettingsBtn)
-        Me.Controls.Add(Me.UpdatesChkBox)
         Me.Controls.Add(Me.ScreenshotsDirBtn)
         Me.Controls.Add(Me.AboutLabel)
-        Me.Controls.Add(Me.SoundChkBox)
         Me.Controls.Add(Me.UIDHelpLabel)
         Me.Controls.Add(Me.UIDLabel)
         Me.Controls.Add(Me.Logo)
@@ -237,11 +200,9 @@ Partial Class Form1
     Friend WithEvents Logo As PictureBox
     Friend WithEvents UIDLabel As Label
     Friend WithEvents UIDHelpLabel As Label
-    Friend WithEvents SoundChkBox As CheckBox
     Friend WithEvents Tooltip As ToolTip
     Friend WithEvents AboutLabel As Label
     Friend WithEvents ScreenshotsDirBtn As Button
-    Friend WithEvents UpdatesChkBox As CheckBox
     Friend WithEvents SettingsBtn As Button
     Friend WithEvents AboutBtn As Button
     Friend WithEvents PlayBtn As Button

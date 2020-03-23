@@ -110,6 +110,12 @@
     <Compile Include="Screendere.Helpers\ProcessHelper.vb" />
     <Compile Include="Screendere.Helpers\ScreenshotHelper.vb" />
     <Compile Include="Screendere.Helpers\SteamHelper.vb" />
+    <Compile Include="Screendere.UI\FormSettings.Designer.vb">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Screendere.UI\FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Settings.vb" />
     <Compile Include="Screendere.Hooks\KeyboardHook.vb" />
     <Compile Include="Updater.vb" />
@@ -126,6 +132,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screendere.UI\FormSettings.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ Public Class Updater
     Public Shared Sub CheckUpdates()
         'Check for updates
         '//docs.microsoft.com/en-us/dotnet/api/system.net.downloadstringcompletedeventargs
-        If Form1.UpdatesChkBox.Checked = True Then
+        If FormSettings.UpdatesChkBox.Checked = True Then
             Using Updater As New WebClient
                 Updater.Headers.Add("User-Agent", "Screendere Beat (+https://strappazzon.xyz/Screendere-Beat)")
                 Dim VersionURI As New Uri("https://raw.githubusercontent.com/Strappazzon/Screendere-Beat/master/version")

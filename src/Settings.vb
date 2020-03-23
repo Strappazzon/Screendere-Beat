@@ -22,8 +22,8 @@ Public Class Settings
         Else
             'Load settings
             Form1.UIDTextBox.Text = SteamID()
-            Form1.SoundChkBox.Checked = PlaySound()
-            Form1.UpdatesChkBox.Checked = CheckUpdates()
+            FormSettings.SoundChkBox.Checked = PlaySound()
+            FormSettings.UpdatesChkBox.Checked = CheckUpdates()
         End If
     End Sub
 
@@ -33,8 +33,8 @@ Public Class Settings
         'Get settings
         Dim SettingsData As IniData = New IniData()
         SettingsData("screendere")("steamid") = Form1.UIDTextBox.Text
-        SettingsData("screendere")("playsound") = Form1.SoundChkBox.Checked
-        SettingsData("screendere")("checkupdates") = Form1.UpdatesChkBox.Checked
+        SettingsData("screendere")("playsound") = FormSettings.SoundChkBox.Checked
+        SettingsData("screendere")("checkupdates") = FormSettings.UpdatesChkBox.Checked
 
         'Create directory if it's been deleted
         If Not Directory.Exists(SettingsFile.Replace("\settings.ini", "")) Then

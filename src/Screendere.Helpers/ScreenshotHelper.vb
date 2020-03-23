@@ -21,7 +21,7 @@ Public Class ScreenshotHelper
             Img.Save(ScreenshotPath & Now.ToString("yyyyMMddHHmmss_fff") & ".png", ImageFormat.Png)
 
             'Play screenshot sound
-            If Form1.SoundChkBox.Checked = True Then
+            If FormSettings.SoundChkBox.Checked = True Then
                 My.Computer.Audio.Play(My.Resources.Screenshot, AudioPlayMode.Background)
             End If
         End Using

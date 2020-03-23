@@ -35,6 +35,10 @@ Public Class Form1
         Settings.Save()
     End Sub
 
+    Private Sub SettingsBtn_Click(sender As Object, e As EventArgs) Handles SettingsBtn.Click
+        FormSettings.ShowDialog()
+    End Sub
+
     Private Sub AboutBtn_Click(sender As Object, e As EventArgs) Handles AboutBtn.Click
         FormAbout.ShowDialog()
     End Sub

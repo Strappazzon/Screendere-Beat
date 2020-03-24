@@ -15,6 +15,7 @@ Public Class Settings
             Dim SettingsData As IniData = New IniData()
             SettingsData("screendere")("steamid") = Nothing
             SettingsData("screendere")("playsound") = "True"
+            SettingsData("screendere")("displaynotification") = "True"
             SettingsData("screendere")("checkupdates") = "False"
 
             'Write settings to file
@@ -23,6 +24,7 @@ Public Class Settings
             'Load settings
             Form1.UIDTextBox.Text = SteamID()
             FormSettings.SoundChkBox.Checked = PlaySound()
+            FormSettings.NotificationChkBox.Checked = DisplayNotification()
             FormSettings.UpdatesChkBox.Checked = CheckUpdates()
         End If
     End Sub
@@ -34,6 +36,7 @@ Public Class Settings
         Dim SettingsData As IniData = New IniData()
         SettingsData("screendere")("steamid") = Form1.UIDTextBox.Text
         SettingsData("screendere")("playsound") = FormSettings.SoundChkBox.Checked
+        SettingsData("screendere")("displaynotification") = FormSettings.NotificationChkBox.Checked
         SettingsData("screendere")("checkupdates") = FormSettings.UpdatesChkBox.Checked
 
         'Create directory if it's been deleted
@@ -59,6 +62,17 @@ Public Class Settings
         Dim PlayScreenshotSound As String = Data("screendere")("playsound")
         If PlayScreenshotSound <> Nothing Then
             Return Boolean.Parse(PlayScreenshotSound)
+        Else
+            Return True
+        End If
+    End Function
+
+    Private Shared Function DisplayNotification() As Boolean
+        Dim Data As IniData = IniParser.ReadFile(SettingsFile)
+
+        Dim Notification As String = Data("screendere")("displaynotification")
+        If Notification <> Nothing Then
+            Return Boolean.Parse(Notification)
         Else
             Return True
         End If

@@ -24,6 +24,12 @@ Public Class ScreenshotHelper
             If FormSettings.SoundChkBox.Checked = True Then
                 My.Computer.Audio.Play(My.Resources.Screenshot, AudioPlayMode.Background)
             End If
+
+            'Display notification and a thumbnail of the screenshot
+            If FormSettings.NotificationChkBox.Checked = True Then
+                FormNotification.ThumbnailBox.Image = New Bitmap(Img, New Size(FormNotification.ThumbnailBox.Width, FormNotification.ThumbnailBox.Height))
+                FormNotification.Show()
+            End If
         End Using
     End Sub
 End Class

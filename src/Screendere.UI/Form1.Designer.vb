@@ -29,10 +29,10 @@ Partial Class Form1
         Me.UIDHelpLabel = New System.Windows.Forms.Label()
         Me.Tooltip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PlayBtn = New System.Windows.Forms.Button()
-        Me.AboutLabel = New System.Windows.Forms.Label()
         Me.AboutBtn = New System.Windows.Forms.Button()
         Me.SettingsBtn = New System.Windows.Forms.Button()
         Me.ScreenshotsDirBtn = New System.Windows.Forms.Button()
+        Me.AboutLabel = New System.Windows.Forms.Label()
         Me.Logo = New System.Windows.Forms.PictureBox()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -101,18 +101,6 @@ Partial Class Form1
         Me.Tooltip.SetToolTip(Me.PlayBtn, "Play Hinedere Beat")
         Me.PlayBtn.UseVisualStyleBackColor = False
         '
-        'AboutLabel
-        '
-        Me.AboutLabel.AutoSize = True
-        Me.AboutLabel.BackColor = System.Drawing.Color.Transparent
-        Me.AboutLabel.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AboutLabel.ForeColor = System.Drawing.Color.White
-        Me.AboutLabel.Location = New System.Drawing.Point(208, 22)
-        Me.AboutLabel.Name = "AboutLabel"
-        Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
-        Me.AboutLabel.TabIndex = 4
-        Me.AboutLabel.Text = "v1.4.0"
-        '
         'AboutBtn
         '
         Me.AboutBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -154,6 +142,18 @@ Partial Class Form1
         Me.ScreenshotsDirBtn.TabIndex = 3
         Me.Tooltip.SetToolTip(Me.ScreenshotsDirBtn, "Open the screenshots folder")
         Me.ScreenshotsDirBtn.UseVisualStyleBackColor = False
+        '
+        'AboutLabel
+        '
+        Me.AboutLabel.AutoSize = True
+        Me.AboutLabel.BackColor = System.Drawing.Color.Transparent
+        Me.AboutLabel.Font = New System.Drawing.Font("MS Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AboutLabel.ForeColor = System.Drawing.Color.White
+        Me.AboutLabel.Location = New System.Drawing.Point(208, 22)
+        Me.AboutLabel.Name = "AboutLabel"
+        Me.AboutLabel.Size = New System.Drawing.Size(49, 13)
+        Me.AboutLabel.TabIndex = 4
+        Me.AboutLabel.Text = "v1.5.0"
         '
         'Logo
         '

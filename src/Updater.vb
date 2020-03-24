@@ -1,7 +1,7 @@
 ﻿Imports System.Net
 
 Public Class Updater
-    Private Const VersionCode As Integer = 1
+    Private Const VersionCode As Integer = 2
 
     Public Shared Sub CheckUpdates()
         'Check for updates

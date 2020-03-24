@@ -45,12 +45,14 @@ I created it because the developer disabled the Steam screenshot key when launch
 > * The number between `?partner=` and `&token=` is your ID.
 >   * In this example your ID would be `1234567890`
 
-* Untick **Play a Sound** if you don't want to hear a sound whenever a screenshot is taken.
+* Click the "**Settings**" button for more configuration options.
 
 * [Run](steam://run/759220) Hinedere Beat.
 
 * Press the **F12** key to capture a screenshot.
   * It's not possible to customize Screendere Beat's screenshot key (at least for now).
+
+* Click the "**Open**" icon to open the screenshots folder.
 
 ### Uploading the Screenshots to Steam Cloud
 
@@ -70,6 +72,10 @@ You can work around it by either:
 * **Play a Sound**
   * _Enabled by default_
   * Play a sound when a screenshot is taken
+
+* **Display a Notification**
+  * _Enabled by default_
+  * Display a notification in the bottom right corner of the screen when a screenshot is taken
 
 * **Check Updates**
   * _Disabled by default_

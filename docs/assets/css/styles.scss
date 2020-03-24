@@ -99,6 +99,26 @@ img:hover { box-shadow: 3px 3px 0 rgba(255,255,255,1); }
 
 .img-responsive { max-width: 100%; height: auto; }
 
+[class^="btn-"] {
+	display: inline-block;
+	height: 23px;
+	width: 23px;
+	border: 1px solid #646464;
+	vertical-align: middle;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn-settings { background: no-repeat center url("{{ '/assets/img/btn-settings.png' | relative_url }}"); }
+
+.btn-folder { background: no-repeat center url("{{ '/assets/img/btn-folder.png' | relative_url }}"); }
+
+[class^="btn-"]:hover { background-color: #323232; }
+
 kbd {
 	font-family: "Courier New", Courier, monospace;
 	display: inline-block;

@@ -1,6 +1,0 @@
-language: csharp
-solution: src/Screendere.sln
-install:
-  - nuget restore src/Screendere.sln
-script:
-  - msbuild /p:Configuration=Release src/Screendere.sln
